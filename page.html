@@ -4,40 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade 02</title>
+    <title>Landing Page</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="s"></script>
 </head>
 <body>
-    <div class="wrap-menu" >
+    <div class="wrap-menu">
         <ul>
-            <li><a href="perfil 01">perfil01</a></li>
-            <li><a href="perfil 02">perfil02</a></li>
-            <li><a href="tecnologias">tecnologias</a></li>
-            <li><a href="contatos">contatos</a></li>
+           <li><a href="#perfil01">Primeiro perfil</a></li>
+           <li><a href="#perfil02">Segundo perfil</a></li>
+           <li><a href="#tec">Tecnologias</a></li>
+           <li><a href="#contact">Contato</a></li>
         </ul>
-        
     </div>
     <div class="perfil01" id="perfil01">
-        <li>perfil 01</li>
-     </div>
-     <div class="perfil02" id="perfil02">           
-         <li>perfil 02</li>
+        <p>perfil 01</p>
     </div>
-    <div class="tecnologias" id="tecnologias">  
-              
-        <li>tecnologias</li>
+    <div class="perfil02" id="perfil02">
+        <p>perfil 02</p>
     </div>
-    <div class="contato" id="contato">
-        <div class= "leftcontact">
-         <li>contato</li>
-         <p>Aqui</p>
-         </div>
-         <div class="rightcontact">
-            
-         </div>
-    </div> 
+    <div class="tecDiv" id="tec">
+        <p>tecnologias</p>
+    </div>
+    <div class="contactDiv" id="contact">
+        <div style="text-align: center;" class="leftContact">
+            <h2>Contato</h2>
+            <p>Aqui você pode mandar uma mensagem.</p>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome">
+            <label for="mensagm">Mensagem</label>
+            <textarea type="text" id="mensagem"></textarea>
+            <button onclick="conferirMensagemWhatsApp()">Conferir dados</button>
+        </div>
+        <div class="rightContact">
+            <div>
+                <p>Nome: <span id="confNome"></span></p>
+                <p>Mensagem: <span id="confMsg"></span></p>
+            </div>
+            <button onclick="enviar()">ZAP</button>
+        </div>
+    </div>
 </body>
-</html>   
+
